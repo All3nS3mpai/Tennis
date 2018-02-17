@@ -19,7 +19,7 @@ realizadas a lo largo del curso.
             ^__^
             (oo)\_______
             (__)\       )\/\
-                ||----w |
+                ||-----||
                 ||     ||
 </pre>
 

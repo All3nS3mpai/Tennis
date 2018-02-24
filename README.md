@@ -7,6 +7,7 @@ Prácticas de programación en Java
 + Jorge Luis Almaral Robles(@HunterZK)
 + Wendy Paulina Trapero Arellanez(@WendyTrapero25)
 + Brandon Tirado Mendoza (@brandontm)
++ Jesús Valenzuela Nario(@JesusV-n)
 
 ## Descripción
 

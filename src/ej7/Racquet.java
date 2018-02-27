@@ -10,39 +10,51 @@ import java.awt.Rectangle;
 import java.awt.event.KeyEvent;
 
 public class Racquet {
+    private Ej7 game;
+
 	private static final int Y = 330;
-	private static final int WITH = 60;
+	private static final int WIDTH = 60;
 	private static final int HEIGHT = 10;
+	private static final int SPEED = 4;
+
 	int x = 0;
 	int xa = 0;
-	private Ej7 game;
+	int key = 0;
 
 	public Racquet(Ej7 game) {
 		this.game = game;
 	}
 
 	public void move() {
-		if (x + xa > 0 && x + xa < game.getWidth() - WITH)
+		if(key == KeyEvent.VK_LEFT)
+			xa = -SPEED;
+        if(key == KeyEvent.VK_RIGHT )
+            xa = SPEED;
+		if(key == 0)
+			xa = 0;
+
+		if (x + xa > 0 && x + xa < game.getWidth() - WIDTH)
 			x = x + xa;
 	}
 
 	public void paint(Graphics2D g) {
-		g.fillRect(x, Y, WITH, HEIGHT);
+		g.fillRect(x, Y, WIDTH, HEIGHT);
 	}
 
 	public void keyReleased(KeyEvent e) {
-		xa = 0;
+		if(key == e.getKeyCode())
+			key = 0;
 	}
 
 	public void keyPressed(KeyEvent e) {
 		if (e.getKeyCode() == KeyEvent.VK_LEFT)
-			xa = -1;
+			key = KeyEvent.VK_LEFT;
 		if (e.getKeyCode() == KeyEvent.VK_RIGHT)
-			xa = 1;
+			key = KeyEvent.VK_RIGHT;
 	}
 
 	public Rectangle getBounds() {
-		return new Rectangle(x, Y, WITH, HEIGHT);
+		return new Rectangle(x, Y, WIDTH, HEIGHT);
 	}
 
 	public int getTopY() {

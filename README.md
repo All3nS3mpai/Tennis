@@ -3,7 +3,7 @@ Prácticas de programación en Java
 
 ## Contribuyentes
 
-+ Armando Payán Angulo(@All3nS3mpai)
++ Armando Payán Angulo(@cybershibo)
 + Jorge Luis Almaral Robles(@HunterZK)
 + Wendy Paulina Trapero Arellanez(@WendyTrapero25)
 + Brandon Tirado Mendoza (@brandontm)
